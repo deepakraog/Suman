@@ -12,7 +12,12 @@ import angularMaterial from 'angular-material';
 import angularUIRouter from 'angular-ui-router';
 // Our modules
 import home from './home/home.module';
+import works from './works/works.module';
+import experience from './experience/experience.module';
+import about from './about/about.module';
+import contact from './contact/contact.module';
 import sidenav from './sidenav/sidenav.module';
+
 
 // Project specific style
 import './scss/bootstrap.scss'
@@ -23,6 +28,10 @@ export const demoModule = angular.module('demo', [
     angularAnimate,
     angularUIRouter,
     home,
+    works,
+    experience,
+    about,
+    contact,
     sidenav
 ]);
 
