@@ -9,11 +9,7 @@ class WorksController {
         'ngInject';
 
         var vm = this;
-        vm.tiles = buildGridModel({
-            icon: "avatar:svg-",
-            title: "Svg-",
-            background: ""
-        });
+       
 
        
     }

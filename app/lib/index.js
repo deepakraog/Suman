@@ -48,10 +48,13 @@ demoModule.config(($stateProvider) => {
     });
 });
 
-demoModule.controller('MainController', function($mdSidenav) {
+demoModule.controller('MainController', function($mdSidenav,$state) {
     let vm = this;
     vm.toggleSidenav = () => {
         $mdSidenav('left').toggle();
+    };
+    vm.changeRoute = (path) => {
+        $state.go(path);
     };
     vm.closeSidenav = () => {
         $mdSidenav('left').close();

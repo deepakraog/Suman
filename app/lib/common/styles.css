@@ -7,8 +7,15 @@
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100vh;
+}
 
-
+body {
+  font: 14px/1 'Open Sans', sans-serif;
+  color: #555;
+  background: #eee;
+}
 
 h1 {
   padding: 50px 0;
@@ -22,8 +29,11 @@ p {
 }
 
 main {
- padding: 50px 50px 0px 50px;
-
+  min-width: 320px;
+  max-width: 800px;
+  padding: 50px;
+  margin: 0 auto;
+  background: #fff;
 }
 
 section {
@@ -56,7 +66,6 @@ label[for*='1']:before { content: '\f1cb'; }
 label[for*='2']:before { content: '\f17d'; }
 label[for*='3']:before { content: '\f16b'; }
 label[for*='4']:before { content: '\f1a9'; }
-label[for*='5']:before { content: '\f1a9'; }
 
 label:hover {
   color: #888;
@@ -73,8 +82,7 @@ input:checked + label {
 #tab1:checked ~ #content1,
 #tab2:checked ~ #content2,
 #tab3:checked ~ #content3,
-#tab4:checked ~ #content4,
-#tab5:checked ~ #content5 {
+#tab4:checked ~ #content4 {
   display: block;
 }
 
@@ -86,7 +94,6 @@ input:checked + label {
     margin: 0;
     font-size: 18px;
   }
-
 }
 
 @media screen and (max-width: 400px) {
@@ -94,5 +101,3 @@ input:checked + label {
     padding: 15px;
   }
 }
-.coachDetails .coverImg{max-height: 200px; overflow: hidden;}
-.coachDetails .profileImg{border-radius: 50%; border: 1px solid #fff; margin-top: -85px; overflow: hidden; width: 150px; height: 150px}

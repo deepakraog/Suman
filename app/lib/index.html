@@ -5,13 +5,14 @@
         <meta charset="utf-8">
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
         <title>{%= o.htmlWebpackPlugin.options.pkg.title %}</title>
+        <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link href="styles.css" charset="utf-8">
     </head>
 
     <body ng-strict-di ng-app="demo" ng-controller="MainController as main">
-        <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left">
-            <div ui-view="sidenav"></div>
-        </md-sidenav>
+        
+        <div class="container-fluid">
         <md-content flex layout-fill layout="column">
             <md-toolbar>
                 <div class="md-toolbar-tools">
@@ -23,9 +24,46 @@
                     </h2>
                 </div>
             </md-toolbar>
-            <div ui-view="content" flex layout-fill layout-padding></div>
-        </md-content>
-        <md-fab-speed-dial md-open="demo.isOpen" md-direction="up" class="md-scale md-hover-full" ng-mouseenter="demo.isOpen=true" ng-mouseleave="demo.isOpen=false">
+            <div class="coachDetails" layout="column">
+                <div class="coverImg">
+                    <img src = "http://getsetgo.fitness/lib/img/coaches/cover/pratik.jpg"/>
+                </div>
+                <div class="profileImg"><img src = "http://base.getsetgo.fitness/upload/trainer_profile/pratik.jpg"/></div></div>
+            
+       
+
+
+        <main>
+  
+  <input ng-click="main.changeRoute('public.home')" id="tab1" type="radio" name="tabs" checked>
+  <label for="tab1">Home</label>
+    
+  <input ng-click="main.changeRoute('public.works')" id="tab2" type="radio" name="tabs">
+  <label for="tab2">Works</label>
+    
+  <input ng-click="main.changeRoute('public.experience')" id="tab3" type="radio" name="tabs">
+  <label for="tab3">Experience</label>
+    
+  <input ng-click="main.changeRoute('public.about')" id="tab4" type="radio" name="tabs">
+  <label for="tab4">About</label>
+
+  <input ng-click="main.changeRoute('public.contact')" id="tab5" type="radio" name="tabs">
+  <label for="tab5">Contact</label>
+    
+  <section id="content1"></section>
+    
+  <section id="content2"></section>
+    
+  <section id="content3"></section>
+    
+  <section id="content4"></section>
+
+  <section id="content5"></section>
+    
+</main>
+
+<div ui-view="content" flex layout-fill layout-padding></div>
+<md-fab-speed-dial md-open="demo.isOpen" md-direction="up" class="md-scale md-hover-full" ng-mouseenter="demo.isOpen=true" ng-mouseleave="demo.isOpen=false">
     <md-fab-trigger>
         <md-button aria-label="menu" class="md-fab md-warn">
             <md-icon md-font-icon="fa fa-bars"></md-icon>
@@ -52,6 +90,8 @@
         </md-button>
     </md-fab-actions>
 </md-fab-speed-dial>
+ </md-content>
+        </div>
         {% for (var chunk in o.htmlWebpackPlugin.files) { %}
         <script src="{%= o.htmlWebpackPlugin.files[chunk]%}"></script>
         {% } %}
