@@ -59,4 +59,7 @@ demoModule.controller('MainController', function($mdSidenav,$state) {
     vm.closeSidenav = () => {
         $mdSidenav('left').close();
     };
+    vm.scrollUp = () => {
+        window.scrollTo(0, 0);
+    }
 });

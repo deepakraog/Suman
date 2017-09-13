@@ -7,13 +7,14 @@
         <title>{%= o.htmlWebpackPlugin.options.pkg.title %}</title>
         <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="styles.css" charset="utf-8">
     </head>
 
     <body ng-strict-di ng-app="demo" ng-controller="MainController as main">
         
         <div class="container-fluid">
-        <md-content flex layout-fill layout="column">
+        <md-content style="overflow: hidden;"flex layout-fill layout="column">
             <md-toolbar>
                 <div class="md-toolbar-tools">
                     <md-button class="md-icon-button" aria-label="open menu" ng-click="main.toggleSidenav()">
@@ -33,7 +34,7 @@
        
 
 
-        <main>
+        <main id="tabInput">
   
   <input ng-click="main.changeRoute('public.home')" id="tab1" type="radio" name="tabs" checked>
   <label for="tab1">Home</label>
@@ -91,6 +92,11 @@
     </md-fab-actions>
 </md-fab-speed-dial>
  </md-content>
+ <div class="row" id="footer">
+   <div id="footerArrowTop" ng-click="main.scrollUp()">
+     <i class="material-icons" id="upArrowIcon">&#xE318;</i>
+   </div>
+ </div>
         </div>
         {% for (var chunk in o.htmlWebpackPlugin.files) { %}
         <script src="{%= o.htmlWebpackPlugin.files[chunk]%}"></script>

@@ -1,0 +1,32 @@
+
+.contactDiv{
+	color: #ffffff;
+	text-align:center;
+}
+.contactSubHead{
+	font-size:18px;
+	text-decoration: underline;
+	margin-top:20px;
+}
+.contactDiv > h3{
+	font-weight:bold;
+	margin-top:30px;
+}
+.contactContent{
+	font-size: 16px;
+}
+#getInTouch{
+	text-decoration: underline;
+	font-size: 28px;
+    margin: 20px 0px 30px 0px;
+}
+.contactCircles{
+	height: 100px;
+    width: 100px;
+    margin: 0px auto;
+    border-radius: 50%;
+    background-color:rgb(127,167,167);
+    color: #ffffff;
+    text-align: center;
+    line-height:155px;
+}

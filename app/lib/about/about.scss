@@ -32,11 +32,11 @@ section {
   border-top: 1px solid #ddd;
 }
 
-input {
+#tabInput > input {
   display: none;
 }
 
-label {
+#tabInput > label {
   display: inline-block;
   margin: 0 0 -1px;
   padding: 15px 25px;
@@ -46,24 +46,24 @@ label {
   border: 1px solid transparent;
 }
 
-label:before {
+#tabInput > label:before {
   font-family: fontawesome;
   font-weight: normal;
   margin-right: 10px;
 }
 
-label[for*='1']:before { content: '\f1cb'; }
-label[for*='2']:before { content: '\f17d'; }
-label[for*='3']:before { content: '\f16b'; }
-label[for*='4']:before { content: '\f1a9'; }
-label[for*='5']:before { content: '\f1a9'; }
+#tabInput > label[for*='1']:before { content: '\f1cb'; }
+#tabInput > label[for*='2']:before { content: '\f17d'; }
+#tabInput > label[for*='3']:before { content: '\f16b'; }
+#tabInput > label[for*='4']:before { content: '\f1a9'; }
+#tabInput > label[for*='5']:before { content: '\f1a9'; }
 
-label:hover {
+#tabInput > label:hover {
   color: #888;
   cursor: pointer;
 }
 
-input:checked + label {
+#tabInput > input:checked + label {
   color: #555;
   border: 1px solid #ddd;
   border-top: 2px solid orange;
@@ -77,7 +77,23 @@ input:checked + label {
 #tab5:checked ~ #content5 {
   display: block;
 }
-
+@media screen and (min-width:651px){
+  #footerArrowTop{
+  width:150px;
+  height:150px;
+  }
+  #footerArrowTop{
+   top:-80px;
+    left:50%;
+  }
+  #footerArrowTop:hover{
+   top:-95px;
+  }
+  #upArrowIcon{
+  font-size: 70px;
+  line-height:100px;
+  }
+}
 @media screen and (max-width: 650px) {
   label {
     font-size: 0;
@@ -85,6 +101,21 @@ input:checked + label {
   label:before {
     margin: 0;
     font-size: 18px;
+  }
+  #footerArrowTop{
+  width:75px;
+  height:75px;
+  }
+  #upArrowIcon{
+  font-size: 40px;
+  line-height:75px;
+  }
+  #footerArrowTop{
+   top:-35px;
+   left:42%;
+  }
+  #footerArrowTop:hover{
+   top:-50px;
   }
 
 }
@@ -96,3 +127,36 @@ input:checked + label {
 }
 .coachDetails .coverImg{max-height: 200px; overflow: hidden;}
 .coachDetails .profileImg{border-radius: 50%; border: 1px solid #fff; margin-top: -85px; overflow: hidden; width: 150px; height: 150px}
+#footer{
+ position:relative;
+  margin-top:200px;
+
+    background: #f5f5f5;
+    height: 100px;
+    padding: 40px 5% 0 5%;
+    color: #666666;
+    font-size: 16px;
+    font-family: "proxima nova", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+    text-align: center;
+    position: relative;
+    -webkit-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0px 10px 3px 0px rgba(0, 0, 0, 0.1);
+
+}
+#footerArrowTop{
+  color: rgb(176,176,176);
+  text-align: center;
+  position:absolute;
+  
+   outline: none;
+  margin: 0px auto;
+  -webkit-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0px 10px 3px 0px rgba(0, 0, 0, 0.1);
+   
+    border-radius:50%;
+    background-color: #f5f5f5;
+    cursor:pointer;
+
+}
