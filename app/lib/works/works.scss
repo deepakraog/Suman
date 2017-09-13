@@ -1,6 +1,6 @@
 .workImageContainer{
-	height:320px;
-	width: 320px;
+	height:250px;
+	width: 250px;
 	margin: 0px auto;
 
 }
@@ -10,9 +10,25 @@
 	margin-top:30px;
 	text-align: center;
 	padding-top:10px;
+	padding-bottom:10px;
 }
 .workHeads{
 	color: rgb(194,117,73);
     font-weight: bold;
     font-size: 22px;
+}
+.workContent{
+	text-align: left;
+    font-size: 16px;
+    word-spacing: 4px;
+}
+@media screen and (min-width: 651px) {
+	.workContent{
+	margin-top: 20px;
+	}
+}
+@media screen and (max-width:650px){
+	.workContent{
+	margin-top: 10px;
+	}
 }
