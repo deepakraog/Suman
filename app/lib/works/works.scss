@@ -22,13 +22,19 @@
     font-size: 16px;
     word-spacing: 4px;
 }
-@media screen and (min-width: 651px) {
+@media screen and (max-width: 651px) {
 	.workContent{
 	margin-top: 20px;
 	}
+	#bankImage{
+	margin-top:0px;
+	}
 }
-@media screen and (max-width:650px){
+@media screen and (min-width:650px){
 	.workContent{
 	margin-top: 10px;
+	}
+	#bankImage{
+	margin-top:-40px;
 	}
 }

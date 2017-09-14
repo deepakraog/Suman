@@ -1,0 +1,38 @@
+.padd20{
+	padding: 10px;
+}
+#blueBox{
+	min-height:600px;
+	background-color:rgb(82,125,194);
+	color: #ffffff;
+	padding:25px;
+	color:#ffffff;
+	font-size:16px;
+	word-spacing : 1px;
+}
+#pinkBox{
+	height:290px;
+	margin-bottom:20px;
+	color:#ffffff;
+	background-color:rgb(234,44,142);
+	text-align:center;
+	position:relative;
+}
+#greenBox{
+padding-top:15px;
+text-align:center;
+	height:290px;
+	margin-top:10px;
+	color: #ffffff;
+	background-color:rgb(36,165,73);
+}
+#prjtNo{
+	font-size: 90px;
+    line-height: 290px;
+}
+#prjt{
+	    position: absolute;
+    left: 50%;
+    top: 195px;
+    font-size: 18px;
+}

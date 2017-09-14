@@ -1,4 +1,117 @@
-<div layout="column" class="gridListdemoDynamicTiles">
-    About
+<div class="row">
+   <div class="col-lg-3 col-md-3 col-sm-0 col-xs-0"></div>
+   <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      <div id="aboutContent" class="row">
+         <h3 style="text-align:center;margin-bottom:15px;">Technologies that we are using in our projects</h3>
+         <p class="headAbout">AngularJS 1.6 with ES6</p>
+         <p class="subHeadAbout">Why ES6?</p>
+         <p class="contentAbout">
+            AngularJS version 1.6 with ES5 is the most stable version for production among all. Around 2 years back
+            Angular was the daddy of all JS frameworks. It has to see a downfall because of the introduction of ES6. ES6 is
+            nothing but the standard of writing javascript. What we are using currently is ES5 on which most of us are familiar
+            with. There is an assosiation in Europe called ECMA (European Computer Manufacturers Association) wanted
+            to intoduce oops concepts in Javascript and the result is ES6. Currently our browsers are not equipped to
+            understand and run the code written using ES6 syntax so we need a transpiler to convert ES6 code to
+            corresponding ES5 code and feed it to browsers. Babel is the famous one among the current transpilers. In
+            future these transpilers will go off as our browers get equipped to run the ES6 code. Browsers will continue to
+            evolve and adopt features in parts. Best to start supporting things now. S0 angular team decided to support
+            coders to write code with ES6 syntax and this is how it evolved.
+         </p>
+         <p class="subHeadAbout">SPA through routing</p>
+         <p class="contentAbout">
+            AngularJS allows you to create Single Page Applications which in turn greatly increases the performance of
+            your application. Let's see what is SPA, In our normal/conventional application if you want to switch from one
+            view to other the whole page has to be re-rendered and that call to the server is very heavy which put load on
+            server which results the slow response. If you make a request what you will get as a response is a whole new
+            HTML/JSP page which includes images, corresponding css and js ﬁles which is a heavy process. On the other
+            hand, In Single Page Applications if you make a request to switch between the views what you will get as a
+            response is just a template in the form of JSON data and it is very lite process exactly like AJAX calls. This can
+            be achieved through Routing. Routing is noting but configuration.
+         </p>
+         <p class="subHeadAbout">2-way data binding</p>
+         <p class="contentAbout">
+            AngularJS is famous among the JS framewoks because of it's 2-way data binding feature. It made very ﬂexible
+            to work with large data passing data from fontend to backend. There is a concept called $scope which acts as
+            a glue for application data. Using $scope whatever the data you change in the frontend will reﬂect in the JS ﬁle
+            and Viceversa.
+         </p>
+         <p class="subHeadAbout">Directives</p>
+         <p class="contentAbout">
+            Directive is one of the powerfull tool of AngularJS. If you have a repeated code in your application you can put
+            that code in a directive and call that within a single line of code. Ex: if I have 7-8 tables in my application,
+            Rather than writing table,thead,tbody,tr,th,td tags everytime what I can do is make that table as a directive and use
+            that directive within a single line where ever it is necessary by passing the data from the controller. This concept
+            is called Component in Angular2 and React18.
+         </p>
+         <p class="subHeadAbout">Services/Factories</p>
+         <p class="contentAbout">
+            If you have a common business logic for your application then you can put that logic in Service/Factory and
+            use that logic from the controller whereever it is necessary.|t's been too often that you will be hearing a big
+            question, What is the difference between a foctory and a service? As per my experience there is only a
+            difference in Syntax other than that everything remains same. You can accomplish a task and get the same
+            result by using Service as well as Factory. Only Angular GOD can tell us the exact difference.
+         </p>
+         <p class="headAbout">HTML 5</p>
+         <p class="subHeadAbout">Intro</p>
+         <p class="contentAbout">
+            After HTML 4.01 was released, focus shifted to XHTML and its stricter standards. After HTML 4.01 was released,
+            focus shifted to XHTML and its stricter standards. HTML5 is much more tolerant and can handle markup from
+            all the prior versions.Though HTMLS was published. officially in 2012, it has been in development since 2004.
+         </p>
+         <p class="subHeadAbout">Goals of HTML5</p>
+         <p class="contentAbout">
+         <ul style="margin-left:20px;" class="contentAbout">
+            <li>Support all existing web pages. With HTML%, there is no requirement to go back and revise older websites.</li>
+            <li>Reduce the need for external plugins and scripts to show website content.</li>
+            <li>Improve the semantic deﬁnition (i.e. meaning and purpose) of page elements.</li>
+            <li>Make the rendering of web content universal and independent of the device being used.</li>
+            <li>Handle web documents errors in a better and more consistent fashion.</li>
+         </ul>
+         </p>
+         <p class="headAbout">SASS</p>
+         <p class="subHeadAbout">Intro</p>
+         <p class="contentAbout">
+            SASS (Syntactically Awesome Stylesheet) is a CSS pre-processor, which helps to reduce repetition with CSS and
+            saves time. It is more stable and powerful CSS extension language that describes the style of document
+            structurally. This tutorial covers the basics of SASS.
+         </p>
+         <p class="subHeadAbout">Advantages</p>
+         <p class="subHeadAbout">
+         <ul style="margin-left:20px;" class="contentAbout">
+            <li>It allows writing clean CSS in a programming construct. It helps in writing CSS quickly.</li>
+            <li>It is a superset of CSS, which helps designers and developers work more efficiently and quickly.</li>
+            <li>As Sass is compatible with all versions of CSS, we can use any available CSS libraries.</li>
+            <li>It is possible to use nested syntax and useful functions such as color manipulation, mathematics and other
+               values.
+            </li>
+         </ul>
+         </p>
+         <p class="subHeadAbout">Features of SASS</p>
+         <p class="contentAbout">
+            It is more stable, powerful, and compatible with versions of CSS. It is a super set of CSS and is based on
+            JavaScript. It is known as syntactic sugar for CSS, which means it makes easier way for user to read or express
+            the things more clearly. It uses its own syntax and compiles to readable CSS. You can easily write CSS in less
+            code within less time. It is an open source pre-processor, which is interpreted into CSS.
+         </p>
+         <p class="headAbout">Webpack</p>
+         <p class="subHeadAbout">Intro</p>
+         <p class="contentAbout">
+            The Webpack conﬁg ﬁle, often named webpack.conﬁg.js, is just a JS ﬁle which gets executed inside Node.js. It
+            has to export a conﬁguration object. What this means ﬁrst and foremost is, that you can basically use all your
+            Node modules in it and write JavaScript as you are used to. This gives you much ﬂexibility for the creation of
+            the conﬁg object.
+         </p>
+         <p class="contentAbout">
+            First you import the modules you need for the creation of the conﬁg object. Import the Node path
+            module and the Webpack HTML plugin. Next you write the things that need to be done before the conﬁg object
+            can be created. You can do this in-line if you like, ljust prefer it like this. Often you have many plugins and
+            this can get unwieldy, if they're all created inline.
+         </p>
+         <p class="contentAbout">
+            Creating the conﬁg object. The next part is the creation of the conﬁg object. It has 4 important sections: entry,
+            output, module and plugins.
+         </p>
+      </div>
+   </div>
+   <div class="col-lg-3 col-md-3 col-sm-0 col-xs-0"></div>
 </div>
-

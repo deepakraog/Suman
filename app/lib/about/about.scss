@@ -44,6 +44,7 @@ section {
   text-align: center;
   color: #bbb;
   border: 1px solid transparent;
+  font-size:14px;
 }
 
 #tabInput > label:before {
@@ -52,11 +53,11 @@ section {
   margin-right: 10px;
 }
 
-#tabInput > label[for*='1']:before { content: '\f1cb'; }
-#tabInput > label[for*='2']:before { content: '\f17d'; }
-#tabInput > label[for*='3']:before { content: '\f16b'; }
-#tabInput > label[for*='4']:before { content: '\f1a9'; }
-#tabInput > label[for*='5']:before { content: '\f1a9'; }
+#tabInput > label[for*='1']:before { content: '\f015'; }
+#tabInput > label[for*='2']:before { content: '\f0ad'; }
+#tabInput > label[for*='3']:before { content: '\f19d'; }
+#tabInput > label[for*='4']:before { content: '\f129'; }
+#tabInput > label[for*='5']:before { content: '\f095'; }
 
 #tabInput > label:hover {
   color: #888;
@@ -68,6 +69,7 @@ section {
   border: 1px solid #ddd;
   border-top: 2px solid orange;
   border-bottom: 1px solid #fff;
+  font-size:16px;
 }
 
 #tab1:checked ~ #content1,
@@ -79,19 +81,19 @@ section {
 }
 @media screen and (min-width:651px){
   #footerArrowTop{
-  width:150px;
-  height:150px;
+  width:100px;
+  height:100px;
   }
   #footerArrowTop{
-   top:-80px;
+   top:-50px;
     left:50%;
   }
   #footerArrowTop:hover{
-   top:-95px;
+   top:-65px;
   }
   #upArrowIcon{
   font-size: 70px;
-  line-height:100px;
+  line-height:80px;
   }
 }
 @media screen and (max-width: 650px) {
@@ -108,7 +110,7 @@ section {
   }
   #upArrowIcon{
   font-size: 40px;
-  line-height:75px;
+  line-height:65px;
   }
   #footerArrowTop{
    top:-35px;
@@ -131,7 +133,7 @@ section {
  position:relative;
   margin-top:200px;
 
-    background: #f5f5f5;
+    background: #f2f2f2;
     height: 100px;
     padding: 40px 5% 0 5%;
     color: #666666;
@@ -148,7 +150,8 @@ section {
   color: rgb(176,176,176);
   text-align: center;
   position:absolute;
-  
+   -webkit-transition: top 0.5s; /* Safari */
+    transition: top 0.5s;
    outline: none;
   margin: 0px auto;
   -webkit-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
@@ -156,7 +159,27 @@ section {
     box-shadow: inset 0px 10px 3px 0px rgba(0, 0, 0, 0.1);
    
     border-radius:50%;
-    background-color: #f5f5f5;
+    background-color: #f2f2f2;
     cursor:pointer;
 
+}
+#aboutContent{
+  background-color:rgb(115,150,46);
+  color:#ffffff;
+  font-size:16px;
+  padding:25px;
+}
+.headAbout{
+  color: rgb(244,81,30);
+  font-size:21px;
+  font-weight:bold;
+  text-align:center;
+}
+.subHeadAbout{
+  color: rgb(212,185,44);
+  font-size:20px;
+}
+.contentAbout{
+  font-size:17px;
+  word-spacing:2px;
 }
