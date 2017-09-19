@@ -75,3 +75,62 @@
 
 //I don't know why, but if this is not declared, you'll see little dots on top of the speed dial. The code its the same from the material.angular one, & there is no bug on their code.....strange
 .md-scale .md-fab-action-item { opacity: 0; }
+
+@media screen and (max-width:650px){
+     ul#workflow > li{
+   display:block;
+    padding:15px;
+}
+#workSubmitContainer{
+    margin-left:28.5%;
+}
+}
+@media screen and (min-width:651px){
+    ul#workflow > li{
+   display: inline-block;
+    padding:25px 30px 25px 30px;
+}
+#workSubmitContainer{
+    margin-left:43.5%;
+}
+}
+#workFlowMainDiv{
+    background-color:rgb(0,79,80);
+    color: #ffffff;
+    text-align:center;
+}
+.workFlowDiv{
+    height:130px;
+    width:130px;
+    background-color : #7fa7a7;
+    color: #ffffff;
+    text-align: center;
+    border-radius:50%;
+    border: 2px solid #ffffff;
+    -webkit-box-shadow: 0px 0px 45px 2px rgba(0,0,0,0.63);
+-moz-box-shadow: 0px 0px 45px 2px rgba(0,0,0,0.63);
+box-shadow: 0px 0px 45px 2px rgba(0,0,0,0.63);
+margin: 0px auto;
+}
+.workFlowText{
+        margin-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.homeRow{
+    border-bottom: 2px solid #cccccc;
+    box-shadow: 5px 5px 3px grey;
+    margin-top: 30px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    min-height:300px;
+}
+ul.homeUls{
+    list-style:none;
+}
+ul.homeUls > li{
+    padding:10px;
+    font-size:16px;
+    color:#000000;
+}

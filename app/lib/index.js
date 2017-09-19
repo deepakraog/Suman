@@ -48,10 +48,11 @@ demoModule.config(($stateProvider) => {
     });
 });
 
-demoModule.controller('MainController', function($mdSidenav,$state) {
+demoModule.controller('MainController', function($mdSidenav,$state,$mdDialog) {
     let vm = this;
     vm.toggleSidenav = () => {
-        $mdSidenav('left').toggle();
+       // $mdSidenav('left').toggle();
+       console.log('alt');
     };
     vm.changeRoute = (path) => {
         $state.go(path);
@@ -62,4 +63,18 @@ demoModule.controller('MainController', function($mdSidenav,$state) {
     vm.scrollUp = () => {
         window.scrollTo(0, 0);
     }
+    vm.showDialog = (ev) => {
+         $mdDialog.show({
+      templateUrl: require("./sidenav/sidenav.html"),
+      controller: "SidenavController as sidenav",
+      parent: angular.element(document.body),
+      targetEvent: ev,
+      clickOutsideToClose:false,
+      fullscreen: true // Only for -xs, -sm breakpoints.
+    })
+    .then(function(answer) {
+    }, function() {
+    });
+    }
+    
 });

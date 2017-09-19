@@ -1,8 +1,71 @@
-<md-toolbar class="md-theme-indigo">
-    <h1 class="md-toolbar-tools">Sidenav Left</h1>
-</md-toolbar>
-<md-content layout-padding>
-    <md-button ng-click="main.closeSidenav()" class="md-primary" hide-gt-md>
-        Close Sidenav Left
-    </md-button>
-</md-content>
+
+<div style="" id="mainModalDialog">
+	<div ng-click='sidenav.closeDialog()' clas="pull-right" style="float:right;margin-right:10px;margin-top:20px;cursor:pointer;"><i class="material-icons">&#xE5CD;</i></div>
+	<h3 style="margin-top:0px;margin-bottom:20px;text-align:center">Upload Your Design</h3>
+	<p style="text-align:center">Feel free to drop us a line we'll get back to you in 24 hours min!</p>
+	<div id="modalForm">
+           
+          
+
+
+           <div class="row">
+               
+                
+                <form  role="form">
+                  <div class="form-group">
+                    <label  class=" control-label"
+                              for="modalName">Your Name</label>
+                    <div class="">
+                        <input type="text" class="form-control" 
+                        id="modalName" placeholder="Name"/>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class=" control-label"
+                          for="modalNumber" >Your Phone Number</label>
+                    <div class="">
+                        <input type="text" class="form-control"
+                            id="modalNumber" placeholder="+91 XXXXXXXXXX"/>
+                    </div>
+                  </div>
+                   <div class="form-group">
+                    <label class=" control-label"
+                          for="modalEmail" >Your Email Address</label>
+                    <div class="">
+                        <input type="text" class="form-control"
+                            id="modalEmail" placeholder="Example@mail.com"/>
+                    </div>
+                  </div>
+                  <div >
+                    <label class=" control-label"
+                          for="modalFile" >Upload Your Design</label>
+                    <div class="">
+                        <input type="file" 
+                            id="modalFile" />
+                    </div>
+                  </div>
+                  <div style="margin-top:20px;" class="form-group">
+                    <label class=" control-label"
+                          for="modalMessage" >Your Message</label>
+                    <div class="">
+                        <textarea id="modalMessage"  rows="4"></textarea> 
+                    </div>
+                  </div>
+                  
+                  <div class="form-group">
+                    <div class="">
+                      <button style="background-color: #004f50;font-weight: bold;margin-top:10px;" type="submit" class="btn btn-primary">Send Your Message</button>
+                      <button ng-click='sidenav.closeDialog()' style="background-color: #004f50;font-weight: bold;margin-top:10px;" class="btn btn-primary">Cancel</button>
+                    </div>
+                  </div>
+                </form>
+          
+        </div>
+
+       
+</div>
+</div> 
+
+
+
+           

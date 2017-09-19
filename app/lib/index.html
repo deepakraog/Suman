@@ -4,25 +4,25 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-        <title>{%= o.htmlWebpackPlugin.options.pkg.title %}</title>
+        <title>MyPersonalSite</title>
         <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link href="styles.css" charset="utf-8">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js" ></script>
+       <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ 
+       <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    
     </head>
 
     <body ng-strict-di ng-app="demo" ng-controller="MainController as main">
         
-        <div class="container-fluid">
-        <md-content style="overflow: hidden;"flex layout-fill layout="column">
-            <md-toolbar>
+        <div class="container-fluid" id="mainContainer">
+        <md-content style="overflow: hidden;" flex layout-fill layout="column">
+            <md-toolbar style="background-color: #000000;">
                 <div class="md-toolbar-tools">
-                    <md-button class="md-icon-button" aria-label="open menu" ng-click="main.toggleSidenav()">
-                        <i class="fa fa-bars"></i>
-                    </md-button>
+                   
                     <h2 flex>
-                        <span>Toolbar</span>
+                        <span>My Personal Site</span>
                     </h2>
                 </div>
             </md-toolbar>
@@ -102,6 +102,8 @@
         {% for (var chunk in o.htmlWebpackPlugin.files) { %}
         <script src="{%= o.htmlWebpackPlugin.files[chunk]%}"></script>
         {% } %}
+
+
     </body>
     <!-- {%= o.htmlWebpackPlugin.options.pkg.name + ' v' + o.htmlWebpackPlugin.options.pkg.version + ' built on ' + new Date() %} -->
 
