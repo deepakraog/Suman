@@ -1,8 +1,8 @@
 
 
-<div class="row">
+<div class="row" style="margin-top:-1px;">
     
-   <div id="workFlowMainDiv" class="col-lg-12 col-sm-12 col-md-12 col-xs-12" >
+   <div id="workFlowMainDiv" class="col-lg-12 col-sm-12 col-md-12 col-xs-12" data-aos="zoom-in" data-aos-delay="300">
        <h3>Our Workflow</h3>
        <ul id="workflow" style="list-style:none;">
            <li><div class="workFlowDiv"><i class="material-icons" style="font-size:65px;line-height:120px;">&#xE2C6;</i></div><p class="workFlowText">Upload design</p></li>
@@ -16,25 +16,25 @@
 </div>
 <div class="row" style="padding:10px;background-color:#7fa7a7;margin-top:-8px;">
     <div id="workSubmitContainer" style="width:200px;">
-    <button class="btn btn-primary" style="background-color:#004f50;font-weight:bold;" ng-click="main.showDialog($event)">Submit Your Design</button></div></div>
+    <button class="btn btn-primary" style="background-color:#004f50;font-weight:bold;" ng-click="home.routeUpload()">Submit Your Design</button></div></div>
 <div class="row">
     <div class="col-lg-1 col-md-0 col-sm-0 col-xs-0"></div>
    <div class="col-lg-10 col-md-12 col-sm-12 col-xs-12">
        <div class="row homeRow">
            <!-- To do developer designer pie chart -->
-           <div class="col-md-3 col-lg-3 col-sm-12 col-xs-12">
+           <div class="col-md-3 col-lg-3 col-sm-12 col-xs-12"  data-aos="fade-left" data-aos-delay="400">
                <div style="text-align:left;margin-left:10px;">
                    <h3>PART DESIGNER</h3>
                    <ul class="homeUls">
-                       <li>User Interface Design.</li>
-                       <li>User Experience Design.</li>
-                       <li>Interaction Design.</li>
-                       <li>Website Design.</li>
-                       <li>Branding / Logo Design.</li>
+                       <li>User Interface Design</li>
+                       <li>User Experience Design</li>
+                       <li>Interaction Design</li>
+                       <li>Website Design</li>
+                       <li>Branding / Logo Design</li>
                    </ul>
                </div>
            </div>
-           <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+           <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12" data-aos="fade-up" data-aos-delay="700">
                <!-- <div class="row" style="width:240px;margin:0px auto;text-align:center;font-size:18px;font-weight:bold;color:#ffffff;">
                 <div style="background-color:rgb(199,199,199); width:100px;height:100px;margin-right:10px;" class="col-lg-6 col-md-6 col-sm-6 col-xs-6">Designer</div>
                <div style="background-color:#000000; width:100px;height:100px;text-align:center;font-size:18px;font-weight:bold;" class="col-lg-6 col-md-6 col-sm-6 col-xs-6">Coder</div>
@@ -42,16 +42,16 @@
                </div> -->
                <div style="width:385px; margin:0px auto;margin-top:-46px;" id="piechart"></div>
            </div>
-           <div class="col-md-3 col-lg-3 col-sm-12 col-xs-12">
+           <div class="col-md-3 col-lg-3 col-sm-12 col-xs-12"  data-aos="fade-right" data-aos-delay="400">
                <div style="text-align:right;margin-right:10px;">
                    <h3>PART CODER</h3>
                     <ul class="homeUls">
-                       <li>Front End Development.</li>
-                       <li>HTML4/5.</li>
-                       <li>CSS / SASS.</li>
-                       <li>JAVAScript.</li>
-                       <li>AngularJS.</li>
-                       <li>ReactJS.</li>
+                       <li>Front End Development</li>
+                       <li>HTML4/5</li>
+                       <li>CSS / SASS</li>
+                       <li>JAVAScript</li>
+                       <li>AngularJS</li>
+                       <li>ReactJS</li>
                     </ul>
                </div>
            </div>
@@ -59,10 +59,10 @@
        </div>
        <div class="row homeRow">
            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-               <div style='height:200px;width:200px;float:right;margin-top:50px;margin-bottom:10px;'><img src="./lib/home/images/RF2.png" /></div>
+               <div data-aos="fade-right" data-aos-delay="800" style='height:200px;width:200px;float:right;margin-top:50px;margin-bottom:10px;'><img src="./lib/home/images/RF2.png" /></div>
            </div>
            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-               <div style="text-align:right;margin-right:10px;">
+               <div style="text-align:left;margin-left:10px;" data-aos="zoom-in" data-aos-delay="200">
                    <h3>SOME RANDOM FACTS</h2>
                    <ul class="homeUls">
                        <li>Call Me For Cricket, Any Time.</li>
@@ -70,14 +70,14 @@
                        <li>I Want To Become Super Mutant.</li>
                        <li>I Am Not Into Books.</li>
                        <li>I Swear At Nonliving Things.</li>
-                       <li>To do fact two</li>
+                       <li>I Like Rock Music. </li>
                    </ul>
                </div>
            </div>
        </div>
        <div class="row homeRow">
-           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-               <div style="text-align:left;margin-left:10px;">
+           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" data-aos="zoom-in" data-aos-delay="200">
+               <div style="text-align:right;margin-right:10px;">
                    <h3>SOME MAJOR PROJECTS</h2>
                    <ul class="homeUls">
                        <li>Order Status Tracking Tool - CISCO.</li>
@@ -90,12 +90,14 @@
                </div>
            </div>
            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-               <div style='height:230px;width:230px;float:left;margin-top:10px;margin-bottom:40px;'><img src="./lib/home/images/Exp3.jpg" /></div>
+               <div style='height:230px;width:230px;float:left;margin-top:40px;margin-bottom:20px;' data-aos="fade-left" data-aos-delay="800"><img src="./lib/home/images/Exp3.jpg" /></div>
            </div>
        </div>
        <div class="row homeRow" style="text-align:center;">
+        <div data-aos="zoom-in" data-aos-delay="300">
         <h3>My Technical Skills</h3>
            <div id="barChart"></div>
+       </div>
        </div>
    </div>
    <div class="col-lg-1 col-md-0 col-sm-0 col-xs-0"></div>

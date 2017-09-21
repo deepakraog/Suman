@@ -16,6 +16,7 @@ import works from './works/works.module';
 import experience from './experience/experience.module';
 import about from './about/about.module';
 import contact from './contact/contact.module';
+import upload from './upload/upload.module';
 import sidenav from './sidenav/sidenav.module';
 
 
@@ -32,6 +33,7 @@ export const demoModule = angular.module('demo', [
     experience,
     about,
     contact,
+    upload,
     sidenav
 ]);
 
@@ -48,13 +50,14 @@ demoModule.config(($stateProvider) => {
     });
 });
 
-demoModule.controller('MainController', function($mdSidenav,$state,$mdDialog) {
+demoModule.controller('MainController', function($mdSidenav,$state,$mdDialog,$window,$mdToast) {
     let vm = this;
     vm.toggleSidenav = () => {
        // $mdSidenav('left').toggle();
        console.log('alt');
     };
     vm.changeRoute = (path) => {
+        window.scrollTo(0, 0);
         $state.go(path);
     };
     vm.closeSidenav = () => {
@@ -63,18 +66,33 @@ demoModule.controller('MainController', function($mdSidenav,$state,$mdDialog) {
     vm.scrollUp = () => {
         window.scrollTo(0, 0);
     }
-    vm.showDialog = (ev) => {
-         $mdDialog.show({
-      templateUrl: require("./sidenav/sidenav.html"),
-      controller: "SidenavController as sidenav",
-      parent: angular.element(document.body),
-      targetEvent: ev,
-      clickOutsideToClose:false,
-      fullscreen: true // Only for -xs, -sm breakpoints.
-    })
-    .then(function(answer) {
-    }, function() {
-    });
+    vm.showToaster = () =>{
+        
+      $state.go('public.home');
+
+    $mdToast.show(
+      $mdToast.simple()
+        .textContent('Your message has been sent!')
+        .position('bottom right' )
+        .hideDelay(3000)
+    );
+  
     }
+    vm.openNewTab = (link) => {
+        if(link=='git'){
+            $window.open('https://github.com/sumanmr9591', '_blank');
+        }
+        else if(link=='facebook'){
+
+        }
+        else if(link=='stack'){
+            $window.open('https://stackoverflow.com/users/7714466/suman-m-r?tab=profile', '_blank');
+        }
+        else if(link=='linkedin'){
+             $window.open('https://www.linkedin.com/in/suman-raj-639352125/', '_blank');
+        }
+  
+    }
+    
     
 });

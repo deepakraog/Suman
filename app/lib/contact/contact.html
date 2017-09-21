@@ -1,11 +1,11 @@
-<div class="row">
+<div class="row" style="margin-top:50px;">
    <div class="row">
    	<div class="col-lg-2 col-sm-0 col-md-0 col-xs-0"></div>
     <div  class="col-lg-8 col-sm-12 col-md-12 col-xs-12">
-    <div style="background-color: rgb(0,79,80);min-height: 610px;">
+    <div data-aos="flip-left" data-aos-delay="300" style="background-color: rgb(0,79,80);min-height: 610px;">
     <div  class="row contactDiv"><p id="getInTouch">GET IN TOUCH</p></div>
-    	<div class="row">
-    		<div class="col-lg-4 col-sm-4 col-md-4 col-xs-12 contactDiv">
+    	<div class="row" >
+    		<div class="col-lg-4 col-sm-4 col-md-4 col-xs-12 contactDiv" data-aos="fade-up" data-aos-delay="900" >
     		  <div class="contactCircles"><i style="font-size:60px;" class="material-icons">&#xE0C8;</i></div>
     			<h3>ADDRESS</h3>
     			<p class="contactSubHead">Residence</p>
@@ -17,7 +17,7 @@
                 Bellandur, Bangalore</br>
                 560103
     		</div>
-    		<div class="col-lg-4 col-sm-4 col-md-4 col-xs-12 contactDiv">
+    		<div class="col-lg-4 col-sm-4 col-md-4 col-xs-12 contactDiv" data-aos="fade-down" data-aos-delay="1600" >
     		<div class="contactCircles"><i style="font-size:60px;" class="material-icons">&#xE0CD;</i></div>
     			<h3>PHONE</h3>
     			<p class="contactSubHead">Mobile</p>
@@ -26,7 +26,7 @@
     			<p class="contactSubHead">Office</p>
     			<p class="contactContent">+91 8067313098</p>
     		</div>
-    		<div class="col-lg-4 col-sm-4 col-md-4 col-xs-12 contactDiv">
+    		<div class="col-lg-4 col-sm-4 col-md-4 col-xs-12 contactDiv" data-aos="fade-up" data-aos-delay="900" >
     		<div class="contactCircles"><i style="font-size:60px;" class="material-icons">&#xE0BE;</i></div>
     			<h3>EMAIL</h3>
     			<p class="contactSubHead">Personal</p>
@@ -38,14 +38,14 @@
     	</div>
     	</div>
     	<div class="row">
-    		<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
+    		<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12" data-aos="fade-left" data-aos-delay="300" >
     		<div style="padding:10px;text-align:center;margin-top:30px;">
     			<p style="color:rgb(0,49,100);font-size:50px">Message Me</p>
     			<p style="color:rgb(131,131,131);font-size:17px;font-weight:bold">If you wish to avail our services, Kindly drop us a</br>message and we will get in touch with you. You can </br>
     			find my contact details above and even download my resume <a href="">Here</a></p>
     		</div>
     		</div>
-    		<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
+    		<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12" data-aos="fade-right" data-aos-delay="300" >
     			<div style="margin-top:30px;">
     				 <md-content class="md-no-momentum">
 								    <md-input-container class="md-icon-float md-block">
@@ -60,7 +60,7 @@
 								    <md-input-container class="md-block">
 								      <!-- Use floating placeholder instead of label -->
 								     
-								      <input  type="email" placeholder="Email (required)" ng-required="true">
+								      <input  type="email" placeholder="Email (required)" >
 								    </md-input-container>
 
 								     <md-input-container class="md-icon-float md-block">
@@ -74,13 +74,13 @@
 							          <label>Comments</label>
 							          <textarea ng-model="user.biography" md-maxlength="150" rows="5" md-select-on-focus></textarea>
 							        </md-input-container>
-     
-										     <div class="pull-right"> <md-button class="md-raised" style="background-color:rgb(214,223,34);color:#ffffff;">Submit</md-button></div>
+      </md-content>
+										     <div class="pull-right"> <button class="btn btn-primary" style="background-color:#004f50;font-weight:bold;" ng-click="main.showToaster()" >Submit Your Message</button></div>
 										   
 
 								    
 
-  </md-content>
+ 
     			</div>
     		</div>
     		<div></div>

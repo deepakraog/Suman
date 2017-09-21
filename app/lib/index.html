@@ -8,8 +8,14 @@
         <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-       <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
- 
+       <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+    <link rel="stylesheet" href="./lib/common/aos.css" />
+    <link rel="stylesheet" href="./lib/common/aosStyle.css" />
+     <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Tangerine">
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Slabo">
        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     
     </head>
@@ -18,21 +24,25 @@
         
         <div class="container-fluid" id="mainContainer">
         <md-content style="overflow: hidden;" flex layout-fill layout="column">
-            <md-toolbar style="background-color: #000000;">
-                <div class="md-toolbar-tools">
-                   
+            <md-toolbar style="background-color: #000000;height:75px;padding-top:6px;">
+                <div class="md-toolbar-tools" style="text-align:center;">
+                   <div class="pull-left " style="position:relative;overflow:hidden;width:64px;height:64px;margin-left:20px;background-color:#ffffff;border-radius:50%;">
+                    <image style="position:absolute;top:-8px;left:-8px;" src="./lib/home/images/logoF.png" />
+                   </div>
                     <h2 flex>
-                        <span>My Personal Site</span>
+                        <p style="font-family:Inconsolata;font-size:24px;">My Personal Site</p>
                     </h2>
                 </div>
             </md-toolbar>
-            <div class="coachDetails" layout="column">
+            <div class="coachDetails" layout="column" style="background-color:#004f50;padding-bottom:20px;">
+
                 <div class="coverImg">
                     <img src = "http://getsetgo.fitness/lib/img/coaches/cover/pratik.jpg"/>
                 </div>
+                <div id="cvDiv" ><p style="font-family:'Tangerine', serif;">Welcome to My Site, </br> You can dowload my CV <a href="">Here</a></p></div>
                 <div class="profileImg"><img src = "http://base.getsetgo.fitness/upload/trainer_profile/pratik.jpg"/></div></div>
             
-       
+
 
 
         <main id="tabInput">
@@ -47,47 +57,53 @@
   <label for="tab3">Experience</label>
     
   <input ng-click="main.changeRoute('public.about')" id="tab4" type="radio" name="tabs">
-  <label for="tab4">About</label>
+  <label for="tab4">Tech's</label>
 
   <input ng-click="main.changeRoute('public.contact')" id="tab5" type="radio" name="tabs">
   <label for="tab5">Contact</label>
     
-  <section id="content1"></section>
+  <div class="hidden-xs" style="background-color: #7fa7a7;width:200%;height:5px;border:none;margin:0px" id="content1"></div>
     
-  <section id="content2"></section>
+  <div class="hidden-xs" style="background-color: #7fa7a7;width:200%;height:5px;border:none;margin:0px" id="content2"></div>
     
-  <section id="content3"></section>
+  <div class="hidden-xs" style="background-color: #7fa7a7;width:200%;height:5px;border:none;margin:0px" id="content3"></div>
     
-  <section id="content4"></section>
+  <div class="hidden-xs" style="background-color: #7fa7a7;width:200%;height:5px;border:none;margin:0px" id="content4"></div>
 
-  <section id="content5"></section>
+  <div class="hidden-xs" style="background-color: #7fa7a7;width:200%;height:5px;border:none;margin:0px" id="content5"></div>
     
 </main>
 
 <div ui-view="content" flex layout-fill layout-padding></div>
-<md-fab-speed-dial md-open="demo.isOpen" md-direction="up" class="md-scale md-hover-full" ng-mouseenter="demo.isOpen=true" ng-mouseleave="demo.isOpen=false">
+<md-fab-speed-dial  md-open="demo.isOpen" md-direction="up" class="md-scale md-hover-full" ng-mouseenter="demo.isOpen=true" ng-mouseleave="demo.isOpen=false">
     <md-fab-trigger>
-        <md-button aria-label="menu" class="md-fab md-warn">
+        <md-button style="background-color:#004f50;" aria-label="menu" class="md-fab md-warn">
             <md-icon md-font-icon="fa fa-bars"></md-icon>
         </md-button>
     </md-fab-trigger>
     <md-fab-actions>
-        <md-button aria-label="twitter" class="md-fab md-raised md-warn md-mini">
-            <md-icon md-font-icon="fa fa-twitter"></md-icon>
+        <md-button ng-click="main.openNewTab('linkedin')" style="background-color:#004f50;" aria-label="Linked In" class="md-fab md-raised md-warn md-mini">
+            <md-icon md-font-icon="fa fa-linkedin"></md-icon>
             <md-tooltip md-direction="left">
-                Twitter
+                Linked-In
             </md-tooltip>
         </md-button>
-        <md-button aria-label="facebook" class="md-fab md-raised md-warn md-mini">
+        <md-button ng-click="main.openNewTab('facebook')" style="background-color:#004f50;" aria-label="Facebook" class="md-fab md-raised md-warn md-mini">
             <md-icon md-font-icon="fa fa-facebook"></md-icon>
             <md-tooltip md-direction="left">
                 Facebook
             </md-tooltip>
         </md-button>
-        <md-button aria-label="Google hangout" class="md-fab md-raised md-warn md-mini">
-            <md-icon md-font-icon="fa fa-google-plus"></md-icon>
+        <md-button ng-click="main.openNewTab('git')" style="background-color:#004f50;" aria-label="Git Hub" class="md-fab md-raised md-warn md-mini">
+            <md-icon md-font-icon="fa fa-github"></md-icon>
             <md-tooltip md-direction="left">
-                Google plus
+                Git Hub
+            </md-tooltip>
+        </md-button>
+         <md-button ng-click="main.openNewTab('stack')" style="background-color:#004f50;" aria-label="Stack" class="md-fab md-raised md-warn md-mini">
+            <md-icon md-font-icon="fa fa-stack-overflow"></md-icon>
+            <md-tooltip md-direction="left">
+                Stack-Overflow
             </md-tooltip>
         </md-button>
     </md-fab-actions>
@@ -97,13 +113,31 @@
    <div id="footerArrowTop" ng-click="main.scrollUp()">
      <i class="material-icons" id="upArrowIcon">&#xE316;</i>
    </div>
+   <div class="row" style="font-size:18px;color: #a6a6a6;">
+     <div style="text-align:center;margin-top:10px;" class="col-md-3 col-lg-3 col-sm-3 col-xs-12">&#169; 2017SumanMR</div>
+      <div style="margin-top:10px;" class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+        <ul id="footerUl">
+          <li ng-click="main.changeRoute('public.home')">Home</li>
+          <li ng-click="main.changeRoute('public.works')">Works</li>
+          <li ng-click="main.changeRoute('public.experience')">Experience</li>
+          <li ng-click="main.changeRoute('public.about')">Tech's</li>
+          <li ng-click="main.changeRoute('public.contact')">Contact</li>
+        </ul>
+      </div>
+       <div style="text-align:center;margin-top:10px;" class="col-md-3 col-lg-3 col-sm-3 col-xs-12">follow @SumanMR</div>
+   </div>
  </div>
         </div>
         {% for (var chunk in o.htmlWebpackPlugin.files) { %}
         <script src="{%= o.htmlWebpackPlugin.files[chunk]%}"></script>
         {% } %}
 
-
+<script src="./lib/common/aos.js"></script>
+<script>
+  AOS.init({
+        easing: 'ease-in-out-sine'
+      });
+</script>
     </body>
     <!-- {%= o.htmlWebpackPlugin.options.pkg.name + ' v' + o.htmlWebpackPlugin.options.pkg.version + ' built on ' + new Date() %} -->
 

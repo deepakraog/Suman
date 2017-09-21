@@ -1,0 +1,46 @@
+<div class="uploadContainer">
+    <h2 style="margin-top:0px; margin-bottom:20px;" class="brand">Upload Your Design</h2>
+    <div class="wrapper animated bounceInLeft">
+      <div class="company-info">
+        <h3>My Personal Site</h3>
+        <ul>
+          <li><i class="fa fa-road"></i> Suman M R</li>
+          <li><i class="fa fa-phone"></i> (+91) 8296613767</li>
+          <li><i class="fa fa-envelope"></i> suman.123.msd@gmail.com</li>
+        </ul>
+      </div>
+      <div class="contact">
+        <h3>Tell Us About Your Design</h3>
+        <form>
+          <p>
+            <span>Name</span>
+            <input type="text" name="name">
+          </p>
+          <p>
+            <span>Company</span>
+            <input type="text" name="company">
+          </p>
+          <p>
+            <span>Email Address</span>
+            <input type="email" name="email">
+          </p>
+          <p>
+            <span>Phone Number</span>
+            <input type="text" name="phone">
+          </p>
+           <p class="full">
+            <span>Upload Design</span>
+            <input type="file" name="file">
+          </p>
+          <p class="full">
+            <span>Message</span>
+            <textarea name="message" rows="5"></textarea>
+          </p>
+          <p class="full">
+            <button ng-click="main.showToaster()">Submit</button>
+            <button ng-click="upload.cancel()" style="margin-top:10px;" type="text">Cancel</button>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>

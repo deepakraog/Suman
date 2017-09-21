@@ -5,10 +5,11 @@ class HomeController {
      *
      * @param {object} $scope
      */
-    constructor($scope,$mdDialog) {
+    constructor($scope,$mdDialog,$state) {
         'ngInject';
 
         var vm = this;
+        vm.state = $state;
        google.charts.load("current", {packages:["corechart"]});
       google.charts.setOnLoadCallback(drawPieChart);
        google.charts.setOnLoadCallback(drawBarChart);
@@ -64,7 +65,11 @@ class HomeController {
     }
 
     
+  routeUpload(){
+   var vm = this;
+   vm.state.go('public.upload');
 
+  }
     
 
 }

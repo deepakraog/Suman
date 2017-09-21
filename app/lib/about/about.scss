@@ -9,7 +9,6 @@
 
 
 
-
 h1 {
   padding: 50px 0;
   font-weight: 400;
@@ -22,7 +21,12 @@ p {
 }
 
 main {
- padding: 20px 50px 0px 50px;
+ 
+  min-width: 320px;
+  max-width: 800px;
+  margin:0px 50px -15px 10px;
+  
+  background: #ffffff;
 
 }
 
@@ -42,7 +46,7 @@ section {
   padding: 15px 25px;
   font-weight: 600;
   text-align: center;
-  color: #bbb;
+  color: #7fa7a7;
   border: 1px solid transparent;
   font-size:14px;
 }
@@ -60,16 +64,16 @@ section {
 #tabInput > label[for*='5']:before { content: '\f095'; }
 
 #tabInput > label:hover {
-  color: #888;
+  color: #004f50;
   cursor: pointer;
 }
 
 #tabInput > input:checked + label {
-  color: #555;
+  color: #004f50;
   border: 1px solid #ddd;
-  border-top: 2px solid orange;
+  border-top: 2px solid #004f50;
   border-bottom: 1px solid #fff;
-  font-size:16px;
+  
 }
 
 #tab1:checked ~ #content1,
@@ -97,10 +101,10 @@ section {
   }
 }
 @media screen and (max-width: 650px) {
-  label {
+  #tabInput > label {
     font-size: 0;
   }
-  label:before {
+  #tabInput > label:before {
     margin: 0;
     font-size: 18px;
   }
@@ -123,19 +127,18 @@ section {
 }
 
 @media screen and (max-width: 400px) {
-  label {
+  #tabInput > label {
     padding: 15px;
   }
 }
 .coachDetails .coverImg{max-height: 200px; overflow: hidden;}
 .coachDetails .profileImg{border-radius: 50%; border: 1px solid #fff; margin-top: -85px; overflow: hidden; width: 150px; height: 150px}
 #footer{
- position:relative;
-  margin-top:100px;
-
+    position:relative;
+    margin-top:100px;
     background: #f2f2f2;
-    height: 100px;
-    padding: 40px 5% 0 5%;
+    
+    padding: 50px;
     color: #666666;
     font-size: 16px;
     font-family: "proxima nova", "Helvetica Neue", Helvetica, Arial, Sans-serif;
@@ -196,4 +199,52 @@ md-dialog{
   background-color:#ffffff;
   padding:20px 60px;
   color:#000000;
+}
+ul#footerUl{
+  list-style:none;
+}
+ul#footerUl > li{
+  display: inline-block;
+  padding: 0px 3px 0px 3px;
+  font-size:18px;
+  color:#a6a6a6;
+   cursor:pointer;
+   border:none;
+   outline:none;
+}
+ul#footerUl > li:hover{
+  text-decoration:underline;
+}
+@media screen and (min-width:651px){
+  ul#footerUl{
+  margin-left:100px;
+}
+#cvDiv{
+  margin-left:175px;
+  font-size:17px;
+  width:250px;
+
+}
+}
+@media screen and (max-width:650px){
+  ul#footerUl{
+  margin-left: 0px;
+}
+#cvDiv{
+  margin-left:160px;
+  width:175px;
+}
+}
+
+#cvDiv{
+color:#000000;
+margin-top:10px;
+height:50px;
+padding-top:10px;
+color: #ffffff;
+  
+  font-size:30px;
+}
+p{
+  font-family: 'Slabo', serif;
 }
